@@ -1,7 +1,7 @@
 defmodule ChattyWeb.RoomChannel do
   use ChattyWeb, :channel
 
-  def join("room:lobby", message, socket) do
+  def join("room:lobby", _auth, socket) do
     {:ok, socket}
   end
 

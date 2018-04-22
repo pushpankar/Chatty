@@ -19,6 +19,7 @@ defmodule ChattyWeb.Router do
     get "/", PageController, :index
     get "/xyz", WelcomeController, :index
     get "/xyz/:message", WelcomeController, :show
+    resources "/user", UserController
   end
 
   # Other scopes may use custom stacks.
